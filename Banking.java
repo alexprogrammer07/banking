@@ -2,9 +2,11 @@ package com.akshat.number_programs;
 //PROGRAM DEVELOPED BY AKSHAT DODHIYA
 import java.io.*;
 
-public class Banking {
-    public static void main(String[] args)throws IOException {
-        InputStreamReader isr=new InputStreamReader(System.in);
+public class Banking 
+   {
+    public static void main(String[] args)throws IOException 
+    {
+        InputStreamReader isr=new InputStreamReader(System.in);  // Create the object for inpu
         BufferedReader br=new BufferedReader(isr);
 
 //      taking inputs
@@ -19,7 +21,7 @@ public class Banking {
         System.out.println("Enter the rate of interest for which the sum is invested");
         int r = Integer.parseInt(br.readLine());
 
-        double maturity, interest ;
+        double maturity, interest;  // Create variables
 
         interest = p*(n*(n1)/24.0)*r/100.0; // formula for interest
         maturity = (p * n) + interest; // formula for maturity value
